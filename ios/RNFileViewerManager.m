@@ -70,7 +70,8 @@
 }
 
 + (UIViewController*)topViewController {
-    return [self topViewControllerWithRootViewController:[UIApplication sharedApplication].keyWindow.rootViewController];
+    UIViewController *VC = [UIApplication sharedApplication].keyWindow.rootViewController;
+    return VC;
 }
 
 + (UIViewController*)topViewControllerWithRootViewController:(UIViewController*)viewController {
